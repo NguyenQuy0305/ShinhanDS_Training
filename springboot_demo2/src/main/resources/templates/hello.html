@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1 th:text="'Hello ' + ${name}"></h1>
+    <h2 th:text="'This is a ' + ${today}"></h2>
+    <p th:text="#{home.welcome}">Xin chao cac ban</p>
+    <div th:object="${session.user}">
+
+    </div>
+    <a href="/thymeleaf">Trang chủ</a>
+</body>
+</html>
