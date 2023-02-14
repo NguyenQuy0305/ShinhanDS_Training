@@ -34,18 +34,22 @@
 ### remove tutorial by id
 
 **Before delete**
+
 ![before_delete](./images/deletedbyidbefore.png)
 
 **After delete**
+
 ![after_delete](./images/deletedbyidafter.png)
 
 ## DELETE: /api/tutorials
 ### Remove all tutorials
 
 **Before delete**
+
 ![before_delete](./images/deleteallbefore.png)
 
 **After delete**
+
 ![after_delete](./images/deleteallafter.png)
 
 
