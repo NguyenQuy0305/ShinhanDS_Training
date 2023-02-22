@@ -1,55 +1,40 @@
-# Mô tả kết quả Test API
+# Practice Week8-3
 
-## POST: /api/tutorials
+## Task1: Code CRUD, Service, Controller for Entity
+![](./images/struc_project.png)
 
-![post_api](./images/post.png)
+## Task2: Write Test Case for 3 Layer
 
-## PUT: /api/tutorials/{id}
-**update tutorial by id = 1**
+### Repository Layer
+![](./images/result_test_repo.png)
 
-![put_api](./images/put.png)
+### Service Layer
+![](./images/result_test_service.png)
 
-## GET: /api/tutorials?title=[keyword]
-**get a list of tutorials whose title contain keyword**
+### Controller Layer
+![](./images/result_test_controller.png)
 
-![get_by_title_api](./images/getbytitle.png)
+## Task 3: Actuator
+### File application.properties
+![](./images/config_actuator.png)
 
-## GET: /api/tutorials/published
-**get a list of tutorials published**
+### View All Endpoint
+![](./images/actuator_all_endpoint.png)
 
-![get_by_published](./images/getbypublished.png)
+### View Health Of application
+![](./images/actutor_health.png)
 
-## GET: /api/tutorials
-**get all tutorials**
+### Shutdown App by Spring Actuator
+![](./images/actuator_shutdown.png)
 
-![get_all](./images/getall.png)
+## Task 4: Devtools
+### File application.properties
+![](./images/devtools_config.png)
 
-## GET: /api/tutorials/{id}
-**get tutorials by id**
+### Change manage port
+![](./images/change_port.png)
 
-![get_by_id](./images/getbyid.png)
-
-## DELETE: /api/tutorials/{id}
-
-### remove tutorial by id
-
-**Before delete**
-
-![before_delete](./images/deletedbyidbefore.png)
-
-**After delete**
-
-![after_delete](./images/deletedbyidafter.png)
-
-## DELETE: /api/tutorials
-### Remove all tutorials
-
-**Before delete**
-
-![before_delete](./images/deleteallbefore.png)
-
-**After delete**
-
-![after_delete](./images/deleteallafter.png)
+### View All Endpoint
+![](./images/view_all_endpoint_after.png)
 
 

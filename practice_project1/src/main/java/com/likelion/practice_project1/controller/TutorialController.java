@@ -24,10 +24,15 @@ public class TutorialController {
                 if(tutorialList.isEmpty()) {
                     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
                 } else {
-                    return new ResponseEntity(tutorialService.findByTitleContain(title), HttpStatus.OK);
+                    return new ResponseEntity(tutorialList, HttpStatus.OK);
                 }
             } else {
-                return new ResponseEntity(tutorialService.findAll(), HttpStatus.OK);
+                List<Tutorial> tutorialList = tutorialService.findAll();
+                if(tutorialList.isEmpty()) {
+                    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+                } else {
+                    return new ResponseEntity(tutorialList, HttpStatus.OK);
+                }
             }
         } catch (Exception ex) {
                 return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
